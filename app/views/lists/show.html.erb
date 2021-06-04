@@ -17,9 +17,7 @@
   <%= bookmark.comment%>
   <%= link_to 'delete', bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to delete #{movie.title} from #{@list.name}"}, class: 'text-danger' %></small>
   <br>
-<%end%>
+<% end %>
 <%= link_to "Add movie", new_list_bookmark_path(@list)%>
 <%= link_to "Go back to lists", lists_path%>
 </div>
-
-s

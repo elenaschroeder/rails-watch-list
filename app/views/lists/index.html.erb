@@ -6,8 +6,8 @@
 
 <div>
   <%@lists.each do |list| %>
-    <%=link_to list_path(list) do%>
+    <%=link_to list_path(list) do %>
       <%=list.name%>
-    <%end%>
-  <%end%>
+    <% end %>
+  <% end %>
 </div>
