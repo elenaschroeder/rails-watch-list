@@ -1,0 +1,13 @@
+<div>
+  My List
+  <br>
+  <%= link_to "Create list of movies", new_list_path, class: "btn btn-primary"%>
+</div>
+
+<div>
+  <%@lists.each do |list| %>
+    <%=link_to list_path(list) do%>
+      <%=list.name%>
+    <%end%>
+  <%end%>
+</div>
