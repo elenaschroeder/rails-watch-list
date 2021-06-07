@@ -1,13 +1,21 @@
-<div>
-  My List
-  <br>
-  <%= link_to "Create list of movies", new_list_path, class: "btn btn-primary"%>
+<div class="navbar navbar-expand-lg navbar-light navbar-watchlist"></div>
+<a class="navbar-brand">Your Watchlist</a>
+<div class="header">
+<h1>My List</h1>
 </div>
+<br>
+<%= link_to "Create list of movies", new_list_path, class: "tn btn-primary"%>
+</br>
 
-<div>
+
+<div class="list display" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <%@lists.each do |list| %>
     <%=link_to list_path(list) do %>
       <%=list.name%>
     <% end %>
   <% end %>
 </div>
+
+<%= cl_image_tag("wambioeqh1h9ddhk9qyk",
+      width: 400, height: 300, crop: :fill) %>
+

@@ -32,7 +32,7 @@ class ListsController < ApplicationController
     private
 
     def require_params
-      params.require(:list).permit(:name)
+      params.require(:list).permit(:name, :photo)
     end
 
     def find
